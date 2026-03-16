@@ -1,7 +1,7 @@
 name: Deploy Angular
 on:
   push:
-    branches: [ main ] # Revisa si tu rama se llama main o master
+    branches: [ main ]
 permissions:
   contents: write
 jobs:
@@ -14,15 +14,16 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20 
 
-      - name: Install and Build
-        run: |
-          npm install
-          npx ng build --base-href /${{ github.event.repository.name }}/
+      - name: Install dependencies
+        run: npm install
 
-      - name: Deploy
+      - name: Build project
+        run: npx ng build --base-href /api-tvmaze/
+
+      - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist/TU_PROYECTO/browser # CAMBIA "TU_PROYECTO" por el nombre de tu app
+          folder: dist/api-tvmaze/browser 
           branch: gh-pages
