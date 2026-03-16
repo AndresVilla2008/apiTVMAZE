@@ -1,0 +1,39 @@
+<h2>Información de la serie</h2>
+
+<ul>
+
+  <li>
+    <h3>Sinopsis</h3>
+    <p>
+      Seis jóvenes (de unos veintitantos años) de la ciudad de Nueva York (Manhattan), que están solos y
+      luchando por sobrevivir en el mundo real, encuentran en la compañía, el consuelo y el apoyo
+      mutuo el antídoto perfecto contra las presiones de la vida. Este grupo promedio de amigos 
+      pasa por enormes caos, problemas familiares, romances pasados y futuros, peleas, risas, lágrimas 
+      y sorpresas mientras aprenden lo que realmente significa ser amigo.
+    </p>
+  </li>
+
+  <li>
+    <h3>Sobre la serie</h3>
+    <p>
+      Esta icónica serie de televisión forma parte del amplio catálogo de producciones cómicas y 
+      narrativas que han marcado la cultura pop contemporánea. La historia se centra en la evolución
+      personal y emocional de un grupo de seis amigos que transitan de la juventud a la adultez en 
+      el vibrante escenario de Manhattan. A lo largo de sus diez temporadas, los episodios exploran 
+      conflictos cotidianos, relaciones románticas complejas, rupturas, reconciliaciones y decisiones 
+      trascendentales que moldean sus vidas y fortalecen sus lazos. La narrativa combina elementos de 
+      comedia ligera, romance y un sutil desarrollo psicológico de los personajes, destacando cómo la 
+      amistad se convierte en el pilar fundamental ante las presiones laborales, familiares y existenciales.
+    </p>
+  </li>
+
+</ul>
+
+
+<h2>Episodios</h2>
+
+<ul>
+  <li *ngFor="let ep of episodes">
+    <strong>S{{ ep.season }}E{{ ep.number }}</strong> - {{ ep.name }}
+  </li>
+</ul>

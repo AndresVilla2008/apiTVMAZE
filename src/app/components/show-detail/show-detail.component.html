@@ -1,0 +1,25 @@
+<div class="detail">
+
+  <img [src]="show.image?.original" alt="{{ show.name }}">
+
+  <div>
+
+    <h1>{{ show.name }}</h1>
+
+    <p><strong>Idioma:</strong> {{ show.language }}</p>
+
+    <p><strong>Estado:</strong> {{ show.status }}</p>
+
+    <p><strong>Canal: </strong> {{ show.network?.name }}</p>
+
+    <p><strong>Fecha de estreno:</strong> {{ show.premiered }}</p>
+
+    <p><strong>Géneros:</strong> {{ show.genres?.join(', ') }}</p>
+
+    <p><strong>Sitio oficial:</strong>
+      <a [href]="show.officialSite" target="_blank">
+        {{ show.officialSite }}
+      </a>
+    </p>
+
+</div>

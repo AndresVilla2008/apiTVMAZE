@@ -1,0 +1,9 @@
+<h2>Elenco</h2>
+
+<div class="cast-grid">
+  <div class="actor" *ngFor="let actor of cast">
+    <img [src]="actor.person.image?.medium" alt="{{ actor.person.name }}">
+    <p>{{ actor.person.name }}</p>
+    <small>Como {{ actor.character.name }}</small>
+  </div>
+</div>
