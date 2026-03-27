@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1774646255145,
+  "timestamp": 1774648760067,
   "index": "/apiTVMAZE/index.html",
   "assetGroups": [
     {
@@ -11,9 +11,9 @@
         "ignoreVary": true
       },
       "urls": [
-        "/apiTVMAZE/main-ZFKPOUV3.js",
+        "/apiTVMAZE/main-HEFYSSUK.js",
         "/apiTVMAZE/polyfills-FFHMD2TL.js",
-        "/apiTVMAZE/styles-G7YISJHB.css"
+        "/apiTVMAZE/styles-CAMQEBNZ.css"
       ],
       "patterns": []
     },
@@ -30,9 +30,9 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/apiTVMAZE/main-ZFKPOUV3.js": "983c2160da66af099a09b3d8ae3c7bb35c0961ee",
+    "/apiTVMAZE/main-HEFYSSUK.js": "61e3c76ccb967fbac4fec088cf4131aea538b235",
     "/apiTVMAZE/polyfills-FFHMD2TL.js": "f49b49a155bc7d192db62a4c15d0a612b460a667",
-    "/apiTVMAZE/styles-G7YISJHB.css": "e7af243b5e79f947c8314ffc400091e0030dd27b"
+    "/apiTVMAZE/styles-CAMQEBNZ.css": "c1d277fd8b6b942835786182e701d692aabd3354"
   },
   "navigationUrls": [
     {
