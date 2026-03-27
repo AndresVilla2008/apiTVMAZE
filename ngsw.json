@@ -1,0 +1,56 @@
+{
+  "configVersion": 1,
+  "timestamp": 1774646255145,
+  "index": "/apiTVMAZE/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/apiTVMAZE/main-ZFKPOUV3.js",
+        "/apiTVMAZE/polyfills-FFHMD2TL.js",
+        "/apiTVMAZE/styles-G7YISJHB.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/apiTVMAZE/main-ZFKPOUV3.js": "983c2160da66af099a09b3d8ae3c7bb35c0961ee",
+    "/apiTVMAZE/polyfills-FFHMD2TL.js": "f49b49a155bc7d192db62a4c15d0a612b460a667",
+    "/apiTVMAZE/styles-G7YISJHB.css": "e7af243b5e79f947c8314ffc400091e0030dd27b"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
