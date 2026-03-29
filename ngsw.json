@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1774650375754,
+  "timestamp": 1774822686108,
   "index": "/apiTVMAZE/index.html",
   "assetGroups": [
     {
@@ -28,7 +28,36 @@
       "patterns": []
     }
   ],
-  "dataGroups": [],
+  "dataGroups": [
+    {
+      "name": "tvmaze-api",
+      "patterns": [
+        "https:\\/\\/api\\.tvmaze\\.com\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 100,
+      "maxAge": 86400000,
+      "timeoutMs": 5000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    },
+    {
+      "name": "tvmaze-images",
+      "patterns": [
+        "https:\\/\\/static\\.tvmaze\\.com\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 200,
+      "maxAge": 604800000,
+      "timeoutMs": 5000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
   "hashTable": {
     "/apiTVMAZE/main-HEFYSSUK.js": "61e3c76ccb967fbac4fec088cf4131aea538b235",
     "/apiTVMAZE/polyfills-FFHMD2TL.js": "f49b49a155bc7d192db62a4c15d0a612b460a667",
